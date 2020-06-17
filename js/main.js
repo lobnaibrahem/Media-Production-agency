@@ -6,3 +6,10 @@ var typed = new Typed('#typed', {
     startDelay: 1000,
     loop: true,}
     );
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
