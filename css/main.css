@@ -5,59 +5,64 @@ body{
     padding: 0;
 
 }
-#backgrond {
-    background:url('../img/home.jpg');
-    position: relative;
-    height: 700px;
+nav{
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.navbar-brand{
+    padding: 0 1.5em;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 600; 
+    
 }
 
- .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #484989;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
-  
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #f1f1f1;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidenav a:hover {
-    color:#e2ea3d;
-  }
-  
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
-.layer {
-    background-color:rgba(0, 0,0,0.6);;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.navbar-brand img{
+    widows: 100px;;
+    height: 55px;
 }
-.type {
+/* .navbar-brand span:first-child{
+    color:  rgba(255,231,0,0.8519782913165266);
+    text-shadow: 1.2px 1.2px #000;
+}
+.navbar-brand span:nth-child(2){
+    background: linear-gradient(90deg, rgba(255,231,0,0.8519782913165266) 0%, rgba(2,0,36,0.8995973389355743) 100%, rgba(0,212,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.navbar-brand span:nth-child(3){
+    color:#27262C;
+    text-shadow: 1.2px 1.2px #000;
+} */
+.nav-item a{
+    color: #f7f7f7 !important;
+    padding: 0 2em ;
+}
+.nav-item{
+    padding: 0 .5em ;
+    text-align: center;
+}
+.nav-item a:hover{
+    color: #F9BD4F !important;
+}
+#backgrond {
+    position: relative;
+    
+}
+#backgrond:after {
+  content:"";
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  height: 100%;
+  background:rgba(0,0,0,0.6);
+
+.carousel-item img{
+    max-width: 100%;
+}
+/* .type {
+
     font-size: 1.5em;
     color: #fff;
 }
@@ -80,4 +85,8 @@ em{
     color: #484989;
     font-weight: 700;
 
+} */
+.c-border a {
+  border: 3px soild #fff;
+  background-color: red;
 }
