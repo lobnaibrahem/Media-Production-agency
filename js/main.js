@@ -1,5 +1,5 @@
 // navbar scroll function
-var navChange = $(".test").offset().top
+var navChange = $("#about").offset().top-100
 $(window).scroll(function(){
 
  var windowScroll = $(window).scrollTop()
@@ -27,12 +27,23 @@ $(".icons a i").css("color","#f8f8f8")
     }
    
 })
+$("a.nav-link").click(function(){
+    
+    var href = $(this).attr("href");
+    var g =  $(href).offset().top-60;
+ $("html,body").animate({scrollTop:g},1000)
+ $("html,body").animate({scrollb:g},1000)
+    
+    
+ })
+var options = {
+    strings: ["photos", "videos","apps"],
+    typeSpeed: 50,
+     backSpeed: 30,
+     backDelay: 700,
+     startDelay: 1000,
+      loop: true
+  }
+  var typed = new Typed(".element", options );
 
-// var typed = new Typed('#typed', {
-//     stringsElement: '#typed-strings',
-//     typeSpeed: 50,
-//     backSpeed: 30,
-//     backDelay: 1000,
-//     startDelay: 1000,
-//     loop: true,}
-//     );
+

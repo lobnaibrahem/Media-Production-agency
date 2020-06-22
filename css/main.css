@@ -9,7 +9,7 @@ body{
 nav{
     height: 80px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    transition: all .8s;
+    transition: all .5s;
 }
 .custom-nav{
     background-color: transparent;
@@ -31,6 +31,7 @@ nav{
     color: #f8f8f8;
     margin: 0 5px;
     font-size: 1.1em;
+    transition: all .6s;
 }
 .icons:before {
     content: '';
@@ -68,10 +69,11 @@ nav{
     margin: 0 5px;
 }
 .nav-item a:hover{
-    color: #F9BD4F !important;
-    transition: all .8s;
+    color: #f9bd4fe1 !important;
+    transition: all .6s;
 }
 /* end navbar style */
+/* //////////////////////////////////////////// */
 /* home  stlye */
 /* carousel */
 .carousel-item {
@@ -105,43 +107,51 @@ nav{
     z-index: 15615;
     position: absolute;
 }
+.btn-color{
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-weight: 600;
+    background-color: transparent;
+    
+}
+a.btn-color:hover{
+    background-color: #f9bd4fe1;
+    color: #f8f8f8;
+    transition: all .6s;
+}
+
 /* end home style */
-
-
-
-
-/* .type {
-
-    font-size: 1.5em;
-    color: #fff;
+/* //////////////////////////////// */
+section{
+    border-top: 1px solid #eee;
+    box-shadow: 5px 5px 15px 0 rgba(31, 31, 31, 0.07);
 }
-#home{
-    margin: 5em;
-    padding: 2em;
-
+/* about section */
+#about{
+    text-align: center;
+    padding: 50px;
 }
-.home-text {
-    margin-top: inherit;
-    padding-top: inherit;
-    color: #fff;
-    font-size: 3.7em;
+h6.about-title{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 2em;
+    letter-spacing: 0.01em;
 }
-strong{
-    color: #E2EA3D;
-    font-weight: 700;
+#about p{
+    font-size: 24px;
+    margin: 20px 0;
+    color: #4D5B60;
+    font-weight: 300;
+    
 }
-em{
-    color: #484989;
-    font-weight: 700;
-
-} */
-.c-border a {
-  border: 3px soild #fff;
-  background-color: red;
+span.element,
+span.we{
+    color: #f9bd4fe1;
 }
-
-
-.test{
+/* //////////////////////////////////// */
+/* services section */
+#work{
     height: 800px;
-    background-color: #F9BD4F;
+    background-color: #f5f3e4ea;
 }
