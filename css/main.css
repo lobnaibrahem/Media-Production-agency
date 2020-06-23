@@ -3,6 +3,7 @@ body{
     font-family: "Lato", sans-serif;
     margin: 0;
     padding: 0;
+    text-transform: capitalize;
 
 }
 /* navbar style */
@@ -153,5 +154,30 @@ span.we{
 /* services section */
 #work{
     height: 800px;
-    background-color: #f5f3e4ea;
+    background-color: #F7F7F7;
+    text-align: center;
+    padding: 20px;
 }
+#work h6{
+    padding: .7em 0;
+}
+
+/* #work div.col-md-4{
+    
+    margin: 1em;
+
+} */
+div.gallary {
+    overflow: hidden;
+    padding: 0;
+}
+div.gallary img{
+    max-width: 100%;
+    filter: grayscale(70%);
+}
+div.gallary img:hover{
+    transition: all .2s ease-in-out; 
+    transform: scale(1.1);
+    filter: none;
+    
+}  
